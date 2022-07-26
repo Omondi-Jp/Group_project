@@ -1,4 +1,4 @@
-.body{
+.body1{
     background-color: red;
 
 }
@@ -7,4 +7,49 @@
     height: auto;
     width: auto;
     
+}
+.body{
+    height: 100%;
+     margin: 0;
+     padding:0;
+     background-image: url("background image.jpg");
+
+     height: 100%; 
+
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.about{
+background-image: url("background image.jpg");
+ width: 100%;
+ height: 30PX;
+ border: 15px ;
+ padding: 10px;
+ margin: 5px;
+}
+.about us{
+   background-color:#FAE6B1 
+
+}
+.about content{
+   background-color:#FAE6B1
+
+}
+.Vision{
+   background-color:#FAE6B1
+}
+.branches{
+   background-color: #B3DEE5
+
+}
+.footer{
+   background-color: #FAE6B1
+}
+.img{
+   height: 50%;
+   width: 100%;
+   text-align: center;
+
 }

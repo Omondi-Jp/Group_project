@@ -2,83 +2,190 @@
 <html lang="en">
 <head>
     <title>In patient</title>
-
+    <link rel="stylesheet" href="C:\Users\jp082\Music\VS_Code\style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="css/style.css">
-
+<script>
+ function myFunction(){
+      alert("Thank you for the information");
+  }
+</script>
     </head>
-    <body>
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center mb-5">
-                    <h2 class="heading-section">In patient form</h2>
-                </div>
+    <body background-color="lightblue">
+      <table width="100%" bgcolor="lightblue" ><tr><td>
+        <center><img src="C:\Users\jp082\Music\VS_Code\lg1.png"></center>
+      </td></tr></table>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="div"><a class="navbar-brand" href="#">Medical</a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <div class="div"><a class="nav-link" href="C:\Users\jp082\Music\VS_Code\home.html">Home <span class="sr-only">(current)</span></a></div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="C:\Users\jp082\Music\VS_Code\services.html">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Patient
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="C:\Users\jp082\Music\VS_Code\inpatient.html">Inpatient</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="C:\Users\jp082\Music\VS_Code\outpatient.html">Outpatient</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="C:\Users\jp082\Music\VS_Code\about.html">About Us</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
             </div>
-            
-            <form>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </nav>
+    </header>
+    
+      <section class="ftco-section">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-md-6 text-center mb-5">
+                      <h2 class="heading-section">In patient form</h2>
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+              
+              <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="inputEmail4">Title</label>
+                      <select id="inputState"  class="form-control">
+                        
+                        <option>Mr</option>
+                        <option>Ms</option>
+                        <option>Others</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputEmail4">First Name</label>
+                      <input type="f-name" class="form-control" id="inputEmail4" placeholder="John">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputEmail4">Surname</label>
+                      <input type="surname" class="form-control" id="inputEmail4" placeholder="Jack">
+                    </div>
+                  
+                    <br><br><br><br>
                   </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputAddress">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Blood typr</label>
-                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                    <option selected>– A, B,</option>
-                    <option value="1">A</option>
-                    <option value="2">B</option>
-                    <option value="3">AB</option>
-                </select>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputAddress">Email</label>
+                      <input type="email" class="form-control" id="inputAddress" placeholder="....@info.com">
+                    </div>
 
-                <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <div class="form-group col-md-6">
+                      <label for="inputState">Marital status</label>
+                      <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Single</option>
+                        <option>Married</option>
+                        <option>Divorced</option>
+                        <option>Widowed</option>
+                      </select>
+                    </div>
+                      
+                  </div>
+
+                  <div class="custom-control custom-checkbox my-1 mr-sm-2">
                     <input type="checkbox" class="custom-control-input" id="customControlInline">
-                    <label class="custom-control-label" for="customControlInline">Remember my preference</label>
+                    <label class="custom-control-label" for="customControlInline">Remember my Email</label>
                 </div>
 
-            
+                <br><br>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+                      <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Blood type</label>
+                      <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                          <option selected>– A, B,O</option>
+                          <option value="1">A-</option>
+                          <option value="2">A+</option>
+                          <option value="3">B-</option>
+                          <option value="4">B+</option>
+                          <option value="4">B-</option>
+                          <option value="4">O+</option>
+                          <option value="4">O-</option>
+                          <option value="4">AB-</option>
+                          <option value="4">AB+</option>
+                      </select>
                   </div>
-                  <div class="form-group col-md-4">
-                    <label for="inputState"></label>
-                    <select id="inputState" class="form-control">
-                      <option selected>Choose...</option>
-                      <option>...</option>
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Gender</label>
+                    <select id="inputState"  class="form-control">
+                      
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Others</option>
                     </select>
                   </div>
-                  
-                <div class="form-group">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Done?
-                    </label>
-                  </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
-              </form>
-    </section>
+                  <br><br>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">City</label>
+                      <input type="text" class="form-control" placeholder="Nairobi"id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputAddress">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Kileleshwa ....">
+                    </div>
+                    
+                    <div class="form-group col-md-2">
+                      <label for="inputZip">Postal code</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <button onclick="myFunction()" type="submit" class="btn btn-primary">Submit</button>
+                </form>
+      </section>
 
-    <script src="js/jquery.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/main.js"></script>
-
-    </body>
+     
+      </body>
+<table width="100%">
+  <tr bgcolor="lightblue" wdth="100%">
+    <td>
+      <br><br><br><br><br>
+      <font color="blue">
+      <u> TEXA MEDICAL</u>    <br>                                							
+    TEXA MEDICAL CLINIC has expanded health services in Kenya,  <br>               				
+    not only to people in the Eastern part of Nairobi County in Kenya,   <br>      				
+     but also to all Kenyans from all over.       <br>                             				
+    </td>
+    <td>
+      <br><br><br><br><br>
+      <font color="blue">
+      <u>OUR CONTACTS</u> <br>
+      Thika Road Juja, <br>
+      +254771851255 <br>
+      info@texamedical.oc.ke <br>
+    </font>
+    </td>
+  </tr>
+  </table>
 </html>
 
